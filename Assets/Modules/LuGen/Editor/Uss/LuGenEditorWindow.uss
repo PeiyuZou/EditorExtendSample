@@ -1,0 +1,10 @@
+.root {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.object-scroll-view {
+    width: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}

@@ -1,0 +1,8 @@
+* {
+    --color-blue: #186075;
+    --color-pink: #FF1C6D;
+    --color-orange: #FE9910;
+    --color-brown: #301C23;
+    --color-purple: #a560e4;
+    --color-yellow: #9e8745;
+}

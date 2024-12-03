@@ -1,0 +1,5 @@
+.container {
+    min-height: 300px;
+    flex-shrink: 0;
+    /*background-color: brown;*/
+}

@@ -1,0 +1,44 @@
+.collapsible-group {
+    margin: 4px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.collapsible-group .header {
+    height: 32px;
+    border-width: 1px;
+    border-color: black;
+    align-items: center;
+    flex-direction: row;
+    background-color: #404040;
+    flex-shrink: 0;
+}
+
+.collapsible-group .header:hover {
+    background-color: #505050;
+}
+
+.collapsible-group .arrow {
+    height: 16px;
+    width: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.collapsible-group .header Label {
+    -unity-font-style: bold;
+}
+
+.collapsible-group .content {
+    min-height: 6px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: black;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 6px;
+    display: flex;
+    flex-shrink: 0;
+}

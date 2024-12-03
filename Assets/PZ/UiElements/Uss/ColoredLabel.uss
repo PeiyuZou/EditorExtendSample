@@ -1,0 +1,11 @@
+.colored-label {
+    height: 24px;
+    -unity-font-style: bold;
+    border-left-width: 4px;
+    border-color: #7a7a7d;
+    margin: 4px;
+    background-color: #2d3133;
+    -unity-text-align: middle-left;
+    padding-left: 4px;
+    color: var(--color-purple);
+}
