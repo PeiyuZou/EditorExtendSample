@@ -42,6 +42,17 @@ namespace Modules.LuGen.Editor.Components
             m_Container.AddToClassList("container");
             parent.Add(m_Container);
 
+            var toolbar = new Toolbar();
+            var searchField = new ToolbarSearchField
+            {
+                style =
+                {
+                    flexGrow = 1,
+                }
+            };
+            toolbar.Add(searchField);
+            m_Container.Add(toolbar);
+
             m_ListView = new ListView(m_List, 36, MakeItem, BindItem);
             m_ListView.showBorder = true;
             m_Container.Add(m_ListView);

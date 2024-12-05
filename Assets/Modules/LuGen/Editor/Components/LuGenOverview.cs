@@ -5,6 +5,7 @@
 //------------------------------------------------------------
 
 using System.Collections.Generic;
+using System.Linq;
 using PZ.UiElements;
 using UnityEditor;
 using UnityEditor.UIElements;
@@ -38,11 +39,19 @@ namespace Modules.LuGen.Editor.Components
             // 1.toolbar button
             var button = new ToolbarButton(() => { Debug.Log("Button clicked"); }) { text = "Click me" };
             toolbar.Add(button);
+
+            var spacer = new VisualElement()
+            {
+                style = { flexGrow = 1, flexShrink = 1, }
+            };
+            toolbar.Add(spacer);
+
             // 2.toolbar spacer
             var toolbarSpacer = new ToolbarSpacer();
             toolbar.Add(toolbarSpacer);
             // 3.toolbar toggle
-            toolbar.Add(new ToolbarToggle() { text = "Toggle me" });
+            var toolbarToggle = new ToolbarToggle() { text = "Toggle me", style = { overflow = Overflow.Hidden }};
+            toolbar.Add(toolbarToggle);
             // 4.toolbar menu
             var toolbarMenu = new ToolbarMenu() { text = "Menu Text" };
             toolbarMenu.menu.AppendAction("Menu item 1", (a) => { Debug.Log("Menu item 1 clicked"); });
